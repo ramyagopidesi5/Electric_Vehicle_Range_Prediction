@@ -53,18 +53,3 @@ Model: Linear Regression (simple yet effective for this linear relationship)
 Environment: Jupyter Notebook or any Python IDE (e.g., VS Code, PyCharm)
 
 No fancy hardware needed – runs on standard laptops!
-
-# 📈 Model Performance
-Training: 80% of data (288 samples)
-
-Testing: 20% of data (72 samples)
-
-Metrics:
-
-Mean Squared Error (MSE): 229.56 km² (low error for range predictions)
-
-R² Score: 0.978 (98% variance explained – outstanding accuracy!)
-
-Insights: Battery size and efficiency dominate predictions, highlighting their real-world importance.
-
-Visualize results with plots (add matplotlib for scatter plots of predicted vs. actual ranges).
