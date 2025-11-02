@@ -1,43 +1,70 @@
-# Electric_Vehicle_Range_Prediction
-Welcome to this project focused on predicting the driving range of electric vehicles (EVs)!
-#🚗 About the Problem
-Electric vehicle range—the distance an EV can travel on a full charge—is critical for consumers and manufacturers alike. This project aims to use key features like:
+EV Range Predictor
 
-Battery capacity (kWh)
+Predict how far your electric vehicle can go on a single charge – revolutionizing EV buying decisions!
 
-Vehicle efficiency (Wh/km)
+🚀 Project Overview
+Welcome to EV Range Predictor, an exciting machine learning project designed to forecast the driving range of electric vehicles (EVs) based on key specifications. In a world where EV adoption is skyrocketing, understanding a car's range is crucial for buyers worried about "range anxiety." This project uses real-world EV data to build a predictive model that empowers users to estimate travel distance using simple inputs like battery size and acceleration.
 
-Fast charging power (W)
+Whether you're an aspiring data scientist, EV enthusiast, or just curious about sustainable tech, this repo demonstrates a complete ML pipeline: from data exploration to model evaluation. Built with Python and scikit-learn, it's beginner-friendly yet powerful enough for real insights!
 
-Price (€)
+Why this matters: Range is the #1 factor in EV purchases. Our model achieves an impressive R² score of 0.978, meaning highly accurate predictions to help you choose the right ride.
 
-Top speed (km/h)
+📊 Dataset
+Source: EV_cars.csv (360 entries from ev-database.org)
 
-Acceleration (0 to 100 km/h in seconds)
+Key Features:
 
-to predict the vehicle's range (in kilometers). Range is a continuous variable, making this a regression problem perfect for supervised machine learning.
+Battery (kWh): Energy capacity
 
-#🎯 Why This Matters
-When choosing an EV, understanding the expected driving range is vital for practical daily use and trip planning. A reliable prediction model helps manufacturers optimize design and buyers make informed decisions.
+Efficiency (Wh/km): Energy use per kilometer
 
-#🔍 Dataset Overview
-360 EV models with 9 key attributes
+Fast_charge (km/h): Charging speed
 
-Cleaned and normalized to improve model performance
+Price (€): Cost in Germany
 
-Missing values handled by imputation
+Top_speed (km/h): Maximum velocity
 
-🛠️ Model Used
-A Linear Regression model was trained on 80% of the data, tested on the remaining 20%. It achieved an excellent R² score of 0.978, showing strong predictive power.
+Acceleration (0-100 km/h in seconds): Speed to 100 km/h
 
-📈 How To Use
-Provide basic EV specs like battery size, efficiency, and charging power.
+Target: Range (km) – The distance on a full charge
 
-The model predicts expected range instantly!
+Data Prep: Missing values imputed with means; features normalized using StandardScaler for optimal model performance.
 
-🤝 Get Involved
-Feel free to experiment with different ML models to improve accuracy!
+This dataset captures diverse EVs from brands like Tesla, BYD, and MG, providing a realistic snapshot of the market.
 
-Explore feature engineering or add new EV attributes for richer predictions.
+🎯 Problem Statement
+Unique Challenge: Predict the "Range" (how far an electric vehicle can travel on a full charge) using input features such as battery size, efficiency, fast charging rate, price, top speed, and acceleration. Since "Range" is a key real-world metric impacting EV purchase decisions and is continuous, making it suitable for supervised regression.
 
-Questions or suggestions? Reach out and let’s innovate!
+This isn't just theory – it's a practical tool for simulating EV performance and aiding eco-friendly choices!
+
+🛠️ Tech Stack
+Language: Python 3.x
+
+Libraries:
+
+Pandas: Data loading and manipulation
+
+Scikit-learn: Model training, scaling, and evaluation
+
+NumPy: Numerical computations
+
+Model: Linear Regression (simple yet effective for this linear relationship)
+
+Environment: Jupyter Notebook or any Python IDE (e.g., VS Code, PyCharm)
+
+No fancy hardware needed – runs on standard laptops!
+
+📈 Model Performance
+Training: 80% of data (288 samples)
+
+Testing: 20% of data (72 samples)
+
+Metrics:
+
+Mean Squared Error (MSE): 229.56 km² (low error for range predictions)
+
+R² Score: 0.978 (98% variance explained – outstanding accuracy!)
+
+Insights: Battery size and efficiency dominate predictions, highlighting their real-world importance.
+
+Visualize results with plots (add matplotlib for scatter plots of predicted vs. actual ranges).
